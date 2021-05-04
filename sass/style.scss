@@ -176,3 +176,39 @@ section {
 .portfolio .row-two .box p {
   font-style: italic;
 }
+
+/* Footer */
+
+.footer {
+    padding-left: 10%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: baseline;
+}
+
+.footer h3 {
+  color: black;
+  text-align: left;
+}
+
+.footer i:nth-of-type(3n+1) {
+    font-size: 30px;
+    background: black;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    color: #fff;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.footer i:hover {
+    transform: scale(1.2);
+}
+
+.footer li {
+    display: inline-block;
+    margin: 10px;
+    font-size: 0;
+}
