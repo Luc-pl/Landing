@@ -85,9 +85,10 @@ section {
 
 .splash .page-title {
   font-family: $font-one;
-  font-weight: 900;
+  font-weight: bold;
   font-size: 80px;
   color: #fff;
+  letter-spacing: 2px;
 }
 
 .splash .page-subtitle {
@@ -119,6 +120,40 @@ section {
 
 /* Services */
 
-.services .row .col {
-  align-items: baseline;
+.services {
+  padding-top: 30px;
+}
+
+.services .s-title {
+    font-weight: 900;
+    line-height: 0.1;
+    font-size: 40px;
+}
+
+.services .s-subtitle {
+    font-family: $font-two;
+    font-style: italic;
+    font-size: 16px;
+}
+
+.services .row {
+    padding-top: 96px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.services .col {
+    flex: 0 0 33.333%;
+}
+
+.services .col .c-title {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.services .col p {
+    font-family: $font-two;
+    font-size: 14px;
+    margin: 0 80px;
 }
