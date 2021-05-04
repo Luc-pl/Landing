@@ -38,6 +38,40 @@ section {
     font-family: $font-one;
 }
 
+.s-title {
+    font-weight: 900;
+    line-height: 0.1;
+    font-size: 40px;
+}
+
+.s-subtitle {
+    font-family: $font-two;
+    font-style: italic;
+    font-size: 16px;
+}
+
+.row {
+    padding-top: 96px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.col, .box {
+    flex: 0 0 33.333%;
+}
+
+.col .c-title {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.col p {
+    font-family: $font-two;
+    font-size: 14px;
+    margin: 0 80px;
+}
+
 /* Navigation */
 
 .navigation {
@@ -124,36 +158,21 @@ section {
   padding-top: 30px;
 }
 
-.services .s-title {
-    font-weight: 900;
-    line-height: 0.1;
-    font-size: 40px;
+/* Portfolio */
+
+.portfolio .row-two {
+  background-color: #f7f7f7;
+  padding-top: 96px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
-.services .s-subtitle {
-    font-family: $font-two;
-    font-style: italic;
-    font-size: 16px;
+.portfolio .row-two .box {
+  padding-bottom: 36px;
+  line-height: 0.5;
 }
 
-.services .row {
-    padding-top: 96px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-.services .col {
-    flex: 0 0 33.333%;
-}
-
-.services .col .c-title {
-    font-size: 18px;
-    font-weight: bold;
-}
-
-.services .col p {
-    font-family: $font-two;
-    font-size: 14px;
-    margin: 0 80px;
+.portfolio .row-two .box p {
+  font-style: italic;
 }
