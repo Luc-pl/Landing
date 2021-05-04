@@ -4,8 +4,7 @@ $color-one: #f9ca24;
 $color-two: #fff;
 
 $font-one: 'Montserrat', sans-serif;
-$font-two: 'Open Sans Regular 400', sans-serif;
-$font-three: 'Open Sans Light 300 italic', sans-serif;
+$font-two: 'Raleway', sans-serif;
 
 $transition: all 1s;
 
@@ -14,6 +13,7 @@ $transition: all 1s;
 *, *::before, *::after {
 	box-sizing: border-box;
 }
+
 body {
     margin: 0;
     text-align: center;
@@ -21,7 +21,7 @@ body {
     color: #3d3d3d;
     font-size: 16px;
     line-height: 1.7;
-    font-family: $font-text;
+    font-family: $font-one;
 }
 .container {
     max-width: 1140px;
@@ -35,17 +35,34 @@ section {
     position: relative;
     font-size: 36px;
     margin: 0 0 60px 0;
-    font-family: $font-header;
+    font-family: $font-one;
 }
-.section-title::after {
+
+/* Navigation */
+
+.navigation {
     position: absolute;
-    content: '';
-    bottom: -12px;
-    left: 50%;
-    width: 50px;
-    height: 10px;
-    transform: translateX(-50%);
-    background: $color-main;
+    background-color: none;
+    padding: 12px 0 12px 700px;
+    z-index: 1;
+}
+
+.navigation ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+.navigation ul li {
+    position: relative;
+    display: inline-block;
+    padding-right: 36px;
+}
+
+.navigation a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 50px;
 }
 
 /* Splash */
@@ -53,10 +70,10 @@ section {
 .splash {
     height: 100vh;
     position: relative;
-    background-image: url('C:\Users\lukas\Kodilla\Landing\images\background-images.jpg');
+    background-image: url("/images/background-images.jpg");
     background-position: center center;
     background-size: cover;
-    background-attachment: fixed;
+    line-height: 0.5;
 }
 .splash-inner {
     position: absolute;
@@ -64,6 +81,20 @@ section {
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
+}
+
+.splash .page-title {
+  font-family: $font-one;
+  font-weight: 900;
+  font-size: 80px;
+  color: #fff;
+}
+
+.splash .page-subtitle {
+  font-family: $font-one;
+  font-style: italic;
+  font-size: 36px;
+  color: #fff;
 }
 
 .btn {
@@ -78,34 +109,16 @@ section {
     text-align: center;
     text-decoration: none;
     cursor: pointer;
-    border-width: 2px;
-    border-style: solid;
     background-position: 100% 0;
     background-size: 300%;
+    color: #fff;
+    line-height: 2.0;
+    font-weight: bold;
     transition: $transition;
 }
 
-/* Navigation */
+/* Services */
 
-.navigation {
-    opacity: 0;
-    padding: 12px 0 12px 0;
-    text-align: right;
-}
-
-.navigation ul {
-    padding: 0;
-    margin: 0;
-    list-style-type: none;
-}
-
-.navigation ul ul li {
-    display: block;
-    margin-bottom: 12px;
-}
-
-.navigation ul li {
-    position: relative;
-    display: inline-block;
-    padding-right: 36px;
+.services .row .col {
+  align-items: baseline;
 }
