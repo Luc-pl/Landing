@@ -27,9 +27,11 @@ body {
     margin: 0 auto;
     padding: 0 10px;
 }
+
 section {
     padding: 108px 0 108px 0
 }
+
 .section-title {
     position: relative;
     font-size: 36px;
@@ -92,6 +94,10 @@ section {
     padding-right: 36px;
 }
 
+.navigation a:hover {
+	color: $color-one;
+}
+
 .navigation a {
   text-decoration: none;
   color: #fff;
@@ -149,6 +155,13 @@ section {
     line-height: 2.0;
     font-weight: bold;
     transition: $transition;
+		background-image: linear-gradient(90deg, #ffffff 50%, transparent 50%);
+}
+
+.btn:hover {
+		background-position: 0 100%;
+    color: $color-one;
+    font-weight: bold;
 }
 
 /* Services */
@@ -172,9 +185,10 @@ section {
   line-height: 0.5;
 }
 
-.portfolio .row-two .box p {
+.portfolio p {
   font-style: italic;
 }
+
 
 /* Footer */
 
@@ -191,7 +205,7 @@ section {
   text-align: left;
 }
 
-.footer i {
+.footer span i {
     font-size: 30px;
     background: black;
     width: 60px;
@@ -202,7 +216,7 @@ section {
     text-align: center;
 }
 
-.footer i:hover {
+.footer span i:hover {
     transform: scale(1.2);
 }
 
@@ -210,4 +224,53 @@ section {
     display: inline-block;
     margin: 10px;
     font-size: 0;
+}
+
+/* Media */
+
+@media (min-width: 360px) and (max-width: 991px) {
+    flex-direction: column;
+}
+
+@media (min-width: 360px) and (max-width: 991px) {
+
+.navigation {
+    display: block;
+		padding: 12px 0 12px 0;
+    text-align: left;
+		font-size: 10px;
+}
+
+.splash .page-title {
+    font-size: 50px;
+		line-height: 1.2;
+}
+
+.splash .page-subtitle {
+    font-size: 26px;
+		line-height: 1.2;
+}
+
+.services .row {
+		padding-bottom: 0;
+		padding-top: 10px;
+		display: block;
+		flex-direction: column;
+}
+
+.services .row .col {
+		padding-top: 30px;
+}
+
+.portfolio .row-two {
+		padding-bottom: 2px;
+		padding-top: 2px;
+		display: block;
+		flex-direction: column;
+}
+
+.footer {
+	justify-content: center;
+}
+
 }
