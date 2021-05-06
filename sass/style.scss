@@ -181,8 +181,15 @@ section {
 }
 
 .portfolio .row-two .box {
+  display: flex;
+  justify-content: center;
   padding-bottom: 96px;
   line-height: 0.5;
+}
+
+.portfolio .b-col {
+  display: block;
+  background-color: $color-two;
 }
 
 .portfolio h4 {
